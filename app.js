@@ -62,7 +62,7 @@ app.get('/api/products/query', (req, res) => {
     let sortedProducts = [...products]
     if(search){
         sortedProducts = sortedProducts.filter((sorted) => {
-            return sorted.name.startsWith()
+            return sorted.name.startsWith(search)
         })
     }
 
